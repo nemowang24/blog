@@ -1,0 +1,19 @@
+{%  load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Django blog</title>
+{#    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400" rel="stylesheet">#}
+{#    <link rel="stylesheet" href="{% static 'css/base.css' %}">#}
+</head>
+<body>
+<header>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <h1><a href="{% url 'home2' %}">Django blog</a></h1>
+</header>
+<div>
+    {% block content %}
+    {% endblock content %}
+</div>
+</body>
+</html>
